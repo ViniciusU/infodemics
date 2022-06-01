@@ -1,4 +1,6 @@
-import {Container, RightContent, LeftContent, VerifyButton} from "./styles"
+import {Container, RightContent, LeftContent, VerifyButton,BannerContainer, Content, ContentCard} from "./styles"
+import {Card} from "../../components/Card"
+import {NewsCard} from "../../components/NewsCard"
 import landingPage from "../../assets/landingPage.svg";
 
 
@@ -8,7 +10,6 @@ export function Home() {
 
     <div>
     <Container>
-
       <LeftContent>
       <h2>Classificando Notícias</h2>
       <h3>Deseja enviar algo?</h3>
@@ -18,7 +19,29 @@ export function Home() {
       <RightContent>
      ...
       </RightContent>
+      <Content>
+      <BannerContainer>
+              <h2>Fato ou fake?</h2>
+      </BannerContainer>
+        <ContentCard>
+        <Card/>
+        <Card/>
+        <Card/>    
+        </ContentCard>
+
+        <NewsCard/>
+
+
+      
+
+      </Content>
+     
     </Container>
+    
+    
+
+
+
 
       
     </div>
